@@ -4,138 +4,240 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      /* Загальні стилі для email */
       body {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 16.1px;
+        color: #5c5c5c;
         background-color: #f4f4f4;
       }
+
       table {
         border-spacing: 0;
         width: 100%;
-        margin: 0 auto;
         max-width: 800px;
+        margin: 0 auto;
         background-color: #ffffff;
+        padding: 15px 100px 60px 100px;
       }
-      .content {
-        padding: 20px;
+
+      img {
+        width: 160px;
+        border-radius: 15px;
+        display: block;
       }
-      .image-container {
-        text-align: center;
+
+      .text-thank {
         margin-bottom: 20px;
       }
+
+      .text-start {
+        margin-bottom: 38px;
+        color: #555555;
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      .text-start span {
+        font-weight: 700;
+      }
+
+      .image-wrapper {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .image-container {
+        display: inline-block;
+        margin: 0 15px;
+      }
+
+      .text-wrapper {
+        margin-bottom: 50px;
+        background-color: #f3f8fd;
+        border-radius: 15px;
+        padding: 19px 0px 26px 0px;
+        text-align: center;
+      }
+
+      .text-wrapper span {
+        font-weight: 700;
+      }
+
+      .text-wrapper-text {
+        margin-bottom: 11px;
+      }
+
+      .text-wrapper-italic {
+        font-style: italic;
+      }
+
       .button {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 9.5px 26px;
         background-color: #007bff;
         color: #ffffff;
         text-align: center;
         text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
+        border-radius: 10px;
+        font-weight: 700;
       }
-      .footer-image {
-        width: 100%;
-        height: auto;
+
+      .all {
+        padding: 15px 44px;
+        margin-bottom: 175px;
       }
+
       .unsubscribe {
         text-align: center;
-        margin: 20px 0;
       }
+
       .unsubscribe a {
-        color: #007bff;
-        text-decoration: none;
+        display: block;
+        color: #838383;
+        font-size: 11px;
+        line-height: 12.65px;
+        margin-bottom: 57px;
+      }
+
+      .footer-image {
+        font-size: 10px;
+        line-height: 12px;
+        padding-top: 30px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 600px) {
+        /* Адаптивні стилі для мобільних пристроїв */
+        table {
+          padding: 20px 10px 40px 10px;
+        }
+
+        .image-wrapper {
+          margin-bottom: 30px;
+          text-align: center;
+        }
+
+        .image-container {
+          /* display: block; */
+          margin: 0 auto 20px auto;
+        }
+
+        .text-wrapper {
+          width: 100%;
+          padding: 15px 10px 20px 10px;
+        }
+
+        .button {
+          padding: 8px 20px;
+          font-size: 12px;
+        }
+
+        .all {
+          padding: 12px 35px;
+          margin-bottom: 100px;
+        }
+
+        .unsubscribe a {
+          margin-bottom: 30px;
+        }
+
+        .footer-image {
+          font-size: 10px;
+          line-height: 12px;
+          padding-top: 30px;
+        }
       }
     </style>
   </head>
   <body>
-    <table width="100%" cellpadding="0" cellspacing="0">
+    <table>
+      <tr>
+        <td class="content" align="center">
+          <p class="text-thank">Thank you for joining!</p>
+          <p class="text-start">
+            Start browsing <span>photos</span> and <span>videos</span> of hot
+            single ladies from your area RIGHT NOW!
+          </p>
+
+          <div class="image-wrapper">
+            <!-- Image 1 with Button -->
+            <div class="image-container">
+              <a href="https://membri.gentedisinibita.com/">
+                <img
+                  src="./img/blondgirl.png"
+                  srcset="./img/blondgirl2x.png 2x"
+                  alt="Browse photos and videos of Emma, 30"
+                />
+              </a>
+              <p>Emma, 30</p>
+              <a href="https://membri.gentedisinibita.com/" class="button">
+                View PHOTOS
+              </a>
+            </div>
+
+            <!-- Image 2 with Button -->
+            <div class="image-container">
+              <a href="https://membri.gentedisinibita.com/">
+                <img
+                  src="./img/browngirl.png"
+                  srcset="./img/browngirl2x.png 2x"
+                  alt="Browse photos and videos of Anna, 42"
+                />
+              </a>
+              <p>Anna, 42</p>
+              <a href="https://membri.gentedisinibita.com/" class="button">
+                View PHOTOS
+              </a>
+            </div>
+
+            <!-- Image 3 with Button -->
+            <div class="image-container">
+              <a href="https://membri.gentedisinibita.com/">
+                <img
+                  src="./img/redgirl.png"
+                  srcset="./img/redgirl2x.png 2x"
+                  alt="Watch videos of Mia, 25"
+                />
+              </a>
+              <p>Mia, 25</p>
+              <a href="https://membri.gentedisinibita.com/" class="button">
+                Watch VIDEO
+              </a>
+            </div>
+          </div>
+
+          <div class="text-wrapper">
+            <p class="text-wrapper-text">
+              Please confirm your email to get access to more than
+              <span>1700</span> newly single <br />
+              ladies from your area for FREE.
+            </p>
+            <p class="text-wrapper-italic">
+              You can always unsubscribe later if you don't like them.
+            </p>
+          </div>
+          <a href="https://membri.gentedisinibita.com/" class="button all">
+            View ALL LADIES &gt;&gt;&gt;
+          </a>
+        </td>
+      </tr>
+      <tr class="unsubscribe">
+        <td align="center">
+          <a href="https://membri.gentedisinibita.com/support/help">
+            Unsubscribe from all
+          </a>
+        </td>
+      </tr>
       <tr>
         <td align="center">
-          <table width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-              <td class="content" align="center">
-                <p>Thank you for joining!</p>
-                <p>
-                  Start browsing photos and videos of hot single ladies from
-                  your area RIGHT NOW!
-                </p>
-
-                <!-- Image 1 with Button -->
-                <div class="image-container">
-                  <a href="https://membri.gentedisinibita.com/">
-                    <img
-                      src="./img/blondgirl.png"
-                      srcset="./img/blondgirl2x.png 2x"
-                      alt="Browse photos and videos of Emma, 30"
-                      style="width: 100%; height: auto; max-width: 220px"
-                    />
-                  </a>
-                  <a href="https://membri.gentedisinibita.com/" class="button"
-                    >View PHOTOS</a
-                  >
-                </div>
-
-                <!-- Image 2 with Button -->
-                <div class="image-container">
-                  <a href="https://membri.gentedisinibita.com/">
-                    <img
-                      src="./img/browngirl.png"
-                      srcset="./img/browngirl2x.png 2x"
-                      alt="Browse photos and videos of Anna, 42"
-                      style="width: 100%; height: auto; max-width: 220px"
-                    />
-                  </a>
-                  <a href="https://membri.gentedisinibita.com/" class="button"
-                    >View PHOTOS</a
-                  >
-                </div>
-
-                <!-- Image 3 with Button -->
-                <div class="image-container">
-                  <a href="https://membri.gentedisinibita.com/">
-                    <img
-                      src="./img/redgirl.png"
-                      srcset="./img/redgirl2x.png 2x"
-                      alt="Watch videos of Mia, 25"
-                      style="width: 100%; height: auto; max-width: 220px"
-                    />
-                  </a>
-                  <a href="https://membri.gentedisinibita.com/" class="button"
-                    >Watch VIDEO</a
-                  >
-                </div>
-
-                <p>
-                  Please confirm your email to get access to more than 1700
-                  newly single ladies from your area for FREE.
-                </p>
-                <p>You can always unsubscribe later if you don't like them.</p>
-                <a href="https://membri.gentedisinibita.com/" class="button"
-                  >View ALL LADIES &gt;&gt;&gt;</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td align="center">
-                <!-- Footer Image -->
-                <img
-                  src="footer@1x.jpg"
-                  srcset="footer@2x.jpg 2x"
-                  alt="Footer"
-                  class="footer-image"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="unsubscribe" align="center">
-                <!-- Unsubscribe Link -->
-                <a href="https://membri.gentedisinibita.com/support/help"
-                  >Unsubscribe from all</a
-                >
-              </td>
-            </tr>
-          </table>
+          <p class="footer-image">
+            AdMirror Limited 3, Advance Business Centre Triq G. Flores, SVR1950
+            Santa Venera, Malta
+          </p>
         </td>
       </tr>
     </table>
