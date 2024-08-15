@@ -105,8 +105,8 @@
         max-width: 403px;
         margin: 0 auto;
         text-align: center;
-        padding-top: 30px;
-        display: none; /* приховані за замовчуванням */
+        padding-top: 57px;
+        display: none;
       }
 
       /* CSS для мобільних пристроїв */
@@ -117,12 +117,18 @@
         .image-wrapper {
           flex-direction: column;
           align-items: center;
-          margin-bottom: 30px;
+          margin-bottom: 35px;
         }
         .image-container {
-          margin: 0 auto 20px auto;
+          margin: 0 auto 35px auto;
           flex: 1 1 100%;
         }
+
+        /* Видалити марджин у останнього елемента */
+        .image-container:last-child {
+          margin-bottom: 0;
+        }
+
         .button {
           padding: 8px 20px;
           font-size: 12px;
@@ -132,13 +138,27 @@
           margin-bottom: 150px;
         }
 
+        .text-thank {
+          font-size: 12px;
+          line-height: 13.8px;
+          margin-bottom: 16px;
+        }
+        .text-start {
+          margin-bottom: 16px;
+          font-size: 16px;
+          line-height: 23px;
+        }
+
         /* Показати мобільне зображення, приховати десктопне */
         .footer-image-mobile {
           display: block;
           max-width: 205px;
+          padding-top: 52px;
+        }
+        .text-wrapper {
+          margin-bottom: 35px;
         }
       }
-
       /* CSS для десктопу */
       @media screen and (min-width: 441px) {
         .footer-image-desktop {
