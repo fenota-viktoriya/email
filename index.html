@@ -19,11 +19,10 @@
       }
       table {
         border-spacing: 0;
-        /* width: 100%; */
         max-width: 800px;
         margin: 0 auto;
         background-color: #ffffff;
-        padding: 15px 100px;
+        padding: 15px 100px 60px 100px;
       }
       img {
         width: 160px;
@@ -44,7 +43,6 @@
       }
       .image-wrapper {
         display: flex;
-
         justify-content: space-between;
         margin-bottom: 50px;
         flex-wrap: wrap;
@@ -61,9 +59,10 @@
         margin-bottom: 14px;
       }
       .text-wrapper {
+        max-width: 500px;
         background-color: #f3f8fd;
         border-radius: 15px;
-        margin: 0px 10px 50px 10px;
+        margin-bottom: 50px;
         padding: 19px 10px 26px 10px;
         text-align: center;
       }
@@ -100,16 +99,20 @@
         line-height: 12.65px;
         display: block;
       }
-      .footer-image {
+      .footer-image-desktop,
+      .footer-image-mobile {
         width: 100%;
         max-width: 403px;
         margin: 0 auto;
         text-align: center;
         padding-top: 30px;
+        display: none; /* приховані за замовчуванням */
       }
+
+      /* CSS для мобільних пристроїв */
       @media screen and (max-width: 440px) {
         table {
-          padding: 15px 10px;
+          padding: 15px 10px 54px 10px;
         }
         .image-wrapper {
           flex-direction: column;
@@ -128,9 +131,18 @@
           padding: 12px 35px;
           margin-bottom: 150px;
         }
-        .footer-image {
-          font-size: 10px;
-          line-height: 12px;
+
+        /* Показати мобільне зображення, приховати десктопне */
+        .footer-image-mobile {
+          display: block;
+          max-width: 205px;
+        }
+      }
+
+      /* CSS для десктопу */
+      @media screen and (min-width: 441px) {
+        .footer-image-desktop {
+          display: block;
         }
       }
     </style>
@@ -211,11 +223,19 @@
       </tr>
       <tr>
         <td align="center">
+          <!-- Зображення для десктопу -->
           <img
             src="./img/Footer.png"
             srcset="./img/Footer2x.png 2x"
             alt="Footer Image"
-            class="footer-image"
+            class="footer-image-desktop"
+          />
+          <!-- Зображення для мобільних пристроїв -->
+          <img
+            src="./img/Footer-mob.png"
+            srcset="./img/Footer2x-mob.png 2x"
+            alt="Footer Image Mobile"
+            class="footer-image-mobile"
           />
         </td>
       </tr>
