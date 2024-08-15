@@ -9,7 +9,7 @@
         padding: 0;
         font-family: Arial, sans-serif;
         font-size: 14px;
-        line-height: 16.1px;
+        line-height: 16px;
         color: #5c5c5c;
         background-color: #f4f4f4;
       }
@@ -21,25 +21,25 @@
         border-spacing: 0;
         max-width: 800px;
         margin: 0 auto;
-        background-color: #ffffff;
-        padding: 15px 100px 60px 100px;
+        background-color: #fff;
+        padding: 15px 100px 60px;
       }
       img {
         width: 160px;
         border-radius: 15px;
-        display: block;
       }
       .text-thank {
         margin-bottom: 20px;
       }
       .text-start {
         margin-bottom: 38px;
-        color: #555555;
+        color: #555;
         font-size: 20px;
         line-height: 23px;
+        font-weight: normal;
       }
       .text-start span {
-        font-weight: 700;
+        font-weight: bold;
       }
       .image-wrapper {
         display: flex;
@@ -48,9 +48,10 @@
         flex-wrap: wrap;
       }
       .image-container {
-        margin: 0 15px 20px 15px;
+        margin: 0 15px 20px;
         flex: 1 1 calc(33% - 30px);
         box-sizing: border-box;
+        text-align: center;
       }
       .image-container img {
         margin-bottom: 15px;
@@ -63,11 +64,11 @@
         background-color: #f3f8fd;
         border-radius: 15px;
         margin-bottom: 50px;
-        padding: 19px 10px 26px 10px;
+        padding: 19px 10px 26px;
         text-align: center;
       }
       .text-wrapper span {
-        font-weight: 700;
+        font-weight: bold;
       }
       .text-wrapper-text {
         margin-bottom: 7px;
@@ -77,13 +78,13 @@
       }
       .button {
         display: inline-block;
-        padding: 9.5px 26px;
+        padding: 10px 26px;
         background-color: #007bff;
-        color: #ffffff;
+        color: #fff;
         text-align: center;
         text-decoration: none;
         border-radius: 10px;
-        font-weight: 700;
+        font-weight: bold;
       }
       .all {
         padding: 15px 44px;
@@ -96,7 +97,7 @@
       .unsubscribe a {
         color: #838383;
         font-size: 11px;
-        line-height: 12.65px;
+        line-height: 13px;
         display: block;
       }
       .footer-image-desktop,
@@ -109,10 +110,9 @@
         display: none;
       }
 
-      /* CSS для мобільних пристроїв */
       @media screen and (max-width: 440px) {
         table {
-          padding: 15px 10px 54px 10px;
+          padding: 15px 10px 54px;
         }
         .image-wrapper {
           flex-direction: column;
@@ -120,15 +120,9 @@
           margin-bottom: 35px;
         }
         .image-container {
-          margin: 0 auto 35px auto;
+          margin: 0 auto 35px;
           flex: 1 1 100%;
         }
-
-        /* Видалити марджин у останнього елемента */
-        .image-container:last-child {
-          margin-bottom: 0;
-        }
-
         .button {
           padding: 8px 20px;
           font-size: 12px;
@@ -137,10 +131,9 @@
           padding: 12px 35px;
           margin-bottom: 150px;
         }
-
         .text-thank {
           font-size: 12px;
-          line-height: 13.8px;
+          line-height: 14px;
           margin-bottom: 16px;
         }
         .text-start {
@@ -148,8 +141,6 @@
           font-size: 16px;
           line-height: 23px;
         }
-
-        /* Показати мобільне зображення, приховати десктопне */
         .footer-image-mobile {
           display: block;
           max-width: 205px;
@@ -159,7 +150,7 @@
           margin-bottom: 35px;
         }
       }
-      /* CSS для десктопу */
+
       @media screen and (min-width: 441px) {
         .footer-image-desktop {
           display: block;
@@ -243,18 +234,18 @@
       </tr>
       <tr>
         <td align="center">
-          <!-- Зображення для десктопу -->
+          <!-- desktop -->
           <img
             src="./img/Footer.png"
             srcset="./img/Footer2x.png 2x"
             alt="Footer Image"
             class="footer-image-desktop"
           />
-          <!-- Зображення для мобільних пристроїв -->
+          <!-- mobile -->
           <img
             src="./img/Footer-mob.png"
             srcset="./img/Footer2x-mob.png 2x"
-            alt="Footer Image Mobile"
+            alt="Footer Image"
             class="footer-image-mobile"
           />
         </td>
