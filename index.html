@@ -14,49 +14,45 @@
         background-color: #f4f4f4;
       }
       p {
-        margin: 0 0;
-        padding: 0 0;
+        margin: 0;
+        padding: 0;
       }
-
       table {
         border-spacing: 0;
-        width: 100%;
+        /* width: 100%; */
         max-width: 800px;
         margin: 0 auto;
         background-color: #ffffff;
-        padding: 15px 100px 60px 100px;
+        padding: 15px 100px;
       }
-
       img {
         width: 160px;
         border-radius: 15px;
         display: block;
       }
-
       .text-thank {
         margin-bottom: 20px;
       }
-
       .text-start {
         margin-bottom: 38px;
         color: #555555;
         font-size: 20px;
         line-height: 23px;
       }
-
       .text-start span {
         font-weight: 700;
       }
-
       .image-wrapper {
         display: flex;
+
         justify-content: space-between;
         margin-bottom: 50px;
+        flex-wrap: wrap;
       }
-
       .image-container {
-        text-align: center;
-        margin: 0 15px;
+        margin: 0 15px 20px 15px;
+        flex: 1 1 calc(33% - 30px);
+        box-sizing: border-box;
       }
       .image-container img {
         margin-bottom: 15px;
@@ -64,27 +60,22 @@
       .image-container p {
         margin-bottom: 14px;
       }
-
       .text-wrapper {
         background-color: #f3f8fd;
         border-radius: 15px;
-        margin: 0px 50px 50px 50px;
-        padding: 19px 0px 26px 0px;
+        margin: 0px 10px 50px 10px;
+        padding: 19px 10px 26px 10px;
         text-align: center;
       }
-
       .text-wrapper span {
         font-weight: 700;
       }
-
       .text-wrapper-text {
         margin-bottom: 7px;
       }
-
       .text-wrapper-italic {
         font-style: italic;
       }
-
       .button {
         display: inline-block;
         padding: 9.5px 26px;
@@ -95,67 +86,51 @@
         border-radius: 10px;
         font-weight: 700;
       }
-
       .all {
         padding: 15px 44px;
         margin-bottom: 175px;
       }
-
       .unsubscribe {
         text-align: center;
+        margin-bottom: 30px;
       }
-
       .unsubscribe a {
-        display: block;
         color: #838383;
         font-size: 11px;
         line-height: 12.65px;
-        margin-bottom: 57px;
+        display: block;
       }
-
       .footer-image {
-        width: 403.38px;
+        width: 100%;
+        max-width: 403px;
+        margin: 0 auto;
         text-align: center;
+        padding-top: 30px;
       }
-
       @media screen and (max-width: 440px) {
         table {
-          padding: 20px 10px 40px 10px;
+          padding: 15px 10px;
         }
-
         .image-wrapper {
           flex-direction: column;
           align-items: center;
           margin-bottom: 30px;
         }
-
         .image-container {
           margin: 0 auto 20px auto;
+          flex: 1 1 100%;
         }
-
-        .text-wrapper {
-          padding: 15px 10px 20px 10px;
-          margin: 0 0 50px 0;
-        }
-
         .button {
           padding: 8px 20px;
           font-size: 12px;
         }
-
         .all {
           padding: 12px 35px;
-          margin-bottom: 100px;
+          margin-bottom: 150px;
         }
-
-        .unsubscribe a {
-          margin-bottom: 30px;
-        }
-
         .footer-image {
           font-size: 10px;
           line-height: 12px;
-          padding-top: 30px;
         }
       }
     </style>
@@ -169,7 +144,6 @@
             Start browsing <span>photos</span> and <span>videos</span> of hot
             single ladies from your area RIGHT NOW!
           </p>
-
           <div class="image-wrapper">
             <!-- Image 1 with Button -->
             <div class="image-container">
@@ -181,11 +155,10 @@
                 />
               </a>
               <p>Emma, 30</p>
-              <a href="https://membri.gentedisinibita.com/" class="button">
-                View PHOTOS
-              </a>
+              <a href="https://membri.gentedisinibita.com/" class="button"
+                >View PHOTOS</a
+              >
             </div>
-
             <!-- Image 2 with Button -->
             <div class="image-container">
               <a href="https://membri.gentedisinibita.com/">
@@ -196,11 +169,10 @@
                 />
               </a>
               <p>Anna, 42</p>
-              <a href="https://membri.gentedisinibita.com/" class="button">
-                View PHOTOS
-              </a>
+              <a href="https://membri.gentedisinibita.com/" class="button"
+                >View PHOTOS</a
+              >
             </div>
-
             <!-- Image 3 with Button -->
             <div class="image-container">
               <a href="https://membri.gentedisinibita.com/">
@@ -211,12 +183,11 @@
                 />
               </a>
               <p>Mia, 25</p>
-              <a href="https://membri.gentedisinibita.com/" class="button">
-                Watch VIDEO
-              </a>
+              <a href="https://membri.gentedisinibita.com/" class="button"
+                >Watch VIDEO</a
+              >
             </div>
           </div>
-
           <div class="text-wrapper">
             <p class="text-wrapper-text">
               Please confirm your email to get access to more than
@@ -226,16 +197,16 @@
               You can always unsubscribe later if you don't like them.
             </p>
           </div>
-          <a href="https://membri.gentedisinibita.com/" class="button all">
-            View ALL LADIES &gt;&gt;&gt;
-          </a>
+          <a href="https://membri.gentedisinibita.com/" class="button all"
+            >View ALL LADIES &gt;&gt;&gt;</a
+          >
         </td>
       </tr>
       <tr class="unsubscribe">
         <td align="center">
-          <a href="https://membri.gentedisinibita.com/support/help">
-            Unsubscribe from all
-          </a>
+          <a href="https://membri.gentedisinibita.com/support/help"
+            >Unsubscribe from all</a
+          >
         </td>
       </tr>
       <tr>
