@@ -1,255 +1,229 @@
+Here's the updated HTML code incorporating the new content:
+
+```html
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta content="telephone=no,address=no,email=no,date=no,url=no" name="format-detection">
+    <meta content="light" name="color-scheme">
+    <meta content="light" name="supported-color-schemes">
+    <title>LoudBids</title>
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        line-height: 16px;
-        color: #5c5c5c;
-        background-color: #f4f4f4;
-      }
-      p {
-        margin: 0;
-        padding: 0;
-      }
-      table {
-        border-spacing: 0;
-        max-width: 800px;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 15px 100px 60px;
-      }
-      img {
-        width: 160px;
-        border-radius: 15px;
-      }
-      .text-thank {
-        margin-bottom: 20px;
-      }
-      .text-start {
-        margin-bottom: 38px;
-        color: #555;
-        font-size: 20px;
-        line-height: 23px;
-        font-weight: normal;
-      }
-      .text-start span {
-        font-weight: bold;
-      }
-      .image-wrapper {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-        flex-wrap: wrap;
-      }
-      .image-container {
-        margin: 0 15px 20px;
-        flex: 1 1 calc(33% - 30px);
-        box-sizing: border-box;
-        text-align: center;
-      }
-      .image-container img {
-        margin-bottom: 15px;
-      }
-      .image-container p {
-        margin-bottom: 14px;
-      }
-      .text-wrapper {
-        max-width: 500px;
-        background-color: #f3f8fd;
-        border-radius: 15px;
-        margin-bottom: 50px;
-        padding: 19px 10px 26px;
-        text-align: center;
-      }
-      .text-wrapper span {
-        font-weight: bold;
-      }
-      .text-wrapper-text {
-        margin-bottom: 7px;
-      }
-      .text-wrapper-italic {
-        font-style: italic;
-      }
-      .button {
-        display: inline-block;
-        padding: 10px 26px;
-        background-color: #007bff;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 10px;
-        font-weight: bold;
-      }
-      .all {
-        padding: 15px 44px;
-        margin-bottom: 175px;
-      }
-      .unsubscribe {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      .unsubscribe a {
-        color: #838383;
-        font-size: 11px;
-        line-height: 13px;
-        display: block;
-      }
-      .footer-image-desktop,
-      .footer-image-mobile {
-        width: 100%;
-        max-width: 403px;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 57px;
-        display: none;
-      }
-
-      @media screen and (max-width: 440px) {
-        table {
-          padding: 15px 10px 54px;
+        body {
+            -webkit-font-smoothing: antialiased;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: none;
+            width: 100% !important;
         }
-        .image-wrapper {
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 35px;
+        td {
+            word-break: break-word;
         }
-        .image-container {
-          margin: 0 auto 35px;
-          flex: 1 1 100%;
+        .preheader {
+            display: none !important;
+            font-size: 1px;
+            line-height: 1px;
+            max-height: 0;
+            max-width: 0;
+            mso-hide: all;
+            opacity: 0;
+            overflow: hidden;
+            visibility: hidden;
         }
-        .button {
-          padding: 8px 20px;
-          font-size: 12px;
+        @media screen and (max-width: 599px) {
+            .blocks {
+                display: block !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                width: 100% !important;
+            }
+            .last-text-style {
+                padding: 0 10% 10px !important;
+            }
+            .center-mobile a {
+                margin: 0 auto !important;
+            }
+            .f30_f_3 {
+                display: block !important;
+            }
+            .table-container {
+                background-position-y: 50px !important;
+            }
+            .text-center {
+                text-align: center !important;
+            }
         }
-        .all {
-          padding: 12px 35px;
-          margin-bottom: 150px;
-        }
-        .text-thank {
-          font-size: 12px;
-          line-height: 14px;
-          margin-bottom: 16px;
-        }
-        .text-start {
-          margin-bottom: 16px;
-          font-size: 16px;
-          line-height: 23px;
-        }
-        .footer-image-mobile {
-          display: block;
-          max-width: 205px;
-          padding-top: 52px;
-        }
-        .text-wrapper {
-          margin-bottom: 35px;
-        }
-      }
-
-      @media screen and (min-width: 441px) {
-        .footer-image-desktop {
-          display: block;
-        }
-      }
     </style>
-  </head>
-  <body>
-    <table>
-      <tr>
-        <td class="content" align="center">
-          <p class="text-thank">Thank you for joining!</p>
-          <p class="text-start">
-            Start browsing <span>photos</span> and <span>videos</span> of hot
-            single ladies from your area RIGHT NOW!
-          </p>
-          <div class="image-wrapper">
-            <!-- Image 1 with Button -->
-            <div class="image-container">
-              <a href="https://membri.gentedisinibita.com/">
-                <img
-                  src="./img/blondgirl.png"
-                  srcset="./img/blondgirl2x.png 2x"
-                  alt="Browse photos of Emma, 30"
-                />
-              </a>
-              <p>Emma, 30</p>
-              <a href="https://membri.gentedisinibita.com/" class="button"
-                >View PHOTOS</a
-              >
-            </div>
-            <!-- Image 2 with Button -->
-            <div class="image-container">
-              <a href="https://membri.gentedisinibita.com/">
-                <img
-                  src="./img/browngirl.png"
-                  srcset="./img/browngirl2x.png 2x"
-                  alt="Browse photos of Anna, 42"
-                />
-              </a>
-              <p>Anna, 42</p>
-              <a href="https://membri.gentedisinibita.com/" class="button"
-                >View PHOTOS</a
-              >
-            </div>
-            <!-- Image 3 with Button -->
-            <div class="image-container">
-              <a href="https://membri.gentedisinibita.com/">
-                <img
-                  src="./img/redgirl.png"
-                  srcset="./img/redgirl2x.png 2x"
-                  alt="Watch videos of Mia, 25"
-                />
-              </a>
-              <p>Mia, 25</p>
-              <a href="https://membri.gentedisinibita.com/" class="button"
-                >Watch VIDEO</a
-              >
-            </div>
-          </div>
-          <div class="text-wrapper">
-            <p class="text-wrapper-text">
-              Please confirm your email to get access to more than
-              <span>1700</span> newly single ladies from your area for FREE.
-            </p>
-            <p class="text-wrapper-italic">
-              You can always unsubscribe later if you don't like them.
-            </p>
-          </div>
-          <a href="https://membri.gentedisinibita.com/" class="button all"
-            >View ALL LADIES &gt;&gt;&gt;</a
-          >
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+    </style>
+</head>
+<body>
+<span class="preheader">
+   Learn with LoudBids experts this September!
+</span>
+<table align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" class="wrapper" role="presentation" width="100%">
+    <tr>
+        <td align="center" valign="top">
+            <table align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" class="table-container" role="presentation"
+                   style="width: 100%; max-width: 600px;" width="600">
+                <tr>
+                    <td class="header-wrapper" style="padding: 30px 15px 30px 15px;">
+                        <table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tr>
+                                <td class="blocks" style="display: table-cell; padding-bottom: 15px;" valign="top" width="30%">
+                                    <a href="https://loudbids.com/" style="text-decoration: underline; color: #0a0a0a; font-weight: bold; font-size: 16px; border:0;" title="Loud Bids">
+                                        <img alt="Loud Bids"
+                                             height="48"
+                                             src="https://storage.flirtrevenue.com/source/1/LDrVpdMHGam8jgChJH0HUTWfXF96l0pm.png"
+                                             style="max-width: 85px; height: auto; max-height: 100px; margin: 0 auto; width: 85px; text-indent: 0; display: block;"
+                                             width="85">
+                                    </a>
+                                </td>
+                                <td class="blocks" style="padding: 0 0 0 40px; display: table-cell;" valign="top" width="70%">
+                                    <table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <h2 style="font-family: 'Poppins', Arial, Helvetica, sans-serif; text-align: center; color: #4415A0; font-weight: 900;">
+                                                    Dear Partners,
+                                                </h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 20px; color: #0a0a0a; font-family: 'Poppins', Arial, Helvetica, sans-serif; padding: 20px 10%; text-align: center;">
+                                                As show madness starts this week, our very own LoudBidders are happy to share their industry insights with you at three conferences this September.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 20px; color: #0a0a0a; font-family: 'Poppins', Arial, Helvetica, sans-serif; padding: 20px 20%; text-align: center">
+                                                Catch knowledge bombs from William and Lisa starting this Thursday! Join these panels and listen to the latest news in dating, traffic, RTB, and API:
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content">
+                        <table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tr>
+                                <td style="padding: 20px;">
+                                    <h3 style="font-family: 'Poppins', Arial, Helvetica, sans-serif; text-align: left; color: #903C8E; font-weight: 700;">
+                                        Affiliate World Budapest
+                                    </h3>
+                                    <p style="font-family: 'Poppins', Arial, Helvetica, sans-serif; color: #000; font-size: 16px;">
+                                        5 Sep, Thursday, 14:00 - 14:35 (35 min)
+                                        <br>
+                                        Breakout Stage
+                                        <br>
+                                        <strong>Universal Love Lessons: Monetization Strategies from Dating Experts for Every Industry</strong> - panel featuring William Soares Pinto.
+                                    </p>
+                                    <h3 style="font-family: 'Poppins', Arial, Helvetica, sans-serif; text-align: left; color: #903C8E; font-weight: 700;">
+                                        AW Summit Bucharest
+                                    </h3>
+                                    <p style="font-family: 'Poppins', Arial, Helvetica, sans-serif; color: #000; font-size: 16px;">
+                                        13 Sep, Friday, 16:00 to 16:45 (45 min)
+                                        <br>
+                                        Second Stage
+                                        <br>
+                                        <strong>Dating Panel: Honest Dating Conversation</strong> - panel featuring William Soares Pinto.
+                                    </p>
+                                    <p style="font-family: 'Poppins', Arial, Helvetica, sans-serif; color: #000; font-size: 16px;">
+                                        13 Sep, Friday, 16:45 to 17:15 (30 min)
+                                        <br>
+                                        Second Stage
+                                        <br>
+                                        <strong>AI Dating Panel: How AI changes the market, in products and acquisition methods</strong> - panel featuring William Soares Pinto.
+                                    </p>
+                                    <h3 style="font-family: 'Poppins', Arial, Helvetica, sans-serif; text-align: left; color: #903C8E; font-weight: 700;">
+                                        The European Summit Prague
+                                    </h3>
+                                    <p style="font-family: 'Poppins', Arial, Helvetica, sans-serif; color: #000; font-size: 16px;">
+                                        17 Sep, Tuesday, 11:00 to 11:50 (50 min)
+                                        <br>
+                                        Room Prague B
+                                        <br>
+                                        <strong>Unlocking the Future of Online Dating: Mastering API Monetization for Dating Traffic</strong> - panel featuring Lisa Moskotova.
+                                    </p>
+                                    <p style="font-family: 'Poppins', Arial, Helvetica, sans-serif; color: #000; font-size: 16px;">
+                                        17 Sep, Tuesday, 14:00 to 14:50 (50 min)
+                                        <br>
+                                        Room Prague B
+                                        <br>
+                                        <strong>The Dating Panel. Inside the Online Dating Industry: Insights and Trends</strong> - panel featuring Lisa Moskotova.
+                                    </p>
+                                    <p style="font-family: 'Poppins', Arial, Helvetica, sans-serif; color: #000; font-size: 16px;">
+                                        17 Sep, Tuesday, 16:00 to 16:50 (50 min)
+                                        <br>
+                                        Room Prague B
+                                        <br>
+                                        <strong>Monetization Strategies Panel</strong> - panel featuring William Soares Pinto.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#903C8E" style="padding: 25px 20px; color: #ffffff; font-family: 'Poppins', Arial, Helvetica, sans-serif; font-size: 22px;">
+                        <center>
+                            <strong>
+                                Make sure you pass by and get to learn all the insights from our team and other industry leaders.
+                            </strong>
+
+
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 25px 0 0 0">
+                        <table cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tr>
+                                <td class="last-text-style" style="padding: 0 15%; color: #903C8E; text-align: center; font-family: 'Poppins', Arial, Helvetica, sans-serif; font-size: 20px;font-style: normal; font-weight: 700;line-height: 21px;">
+                                    See you soon!
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 0;">
+                        <table align="center" cellpadding="0" cellspacing="0" role="presentation" width="80%">
+                            <tr>
+                                <td align="center" valign="middle" width="33%">
+                                    <a href="https://loudbids.com" style="text-decoration: none" title="Loudbids">
+                                        <img alt="Loudbids"
+                                             height="39"
+                                             src="https://storage.flirtrevenue.com/source/1/LDrVpdMHGam8jgChJH0HUTWfXF96l0pm.png"
+                                             style="width: 69px; color: #000000; font-weight: bold; font-size: 20px;text-indent: 0;line-height: 2; max-height: 100px"
+                                             width="69">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="#FFFFFF" class="main-text text-[10px] text-normal py-4"
+                        style="padding-top: 16px; padding-bottom: 16px; font-size: 10px; font-family: 'Poppins', Arial, Helvetica, sans-serif;">
+                        Copyright &#169; 2024 LOUDBIDS
+                    </td>
+                </tr>
+            </table>
         </td>
-      </tr>
-      <tr class="unsubscribe">
-        <td align="center">
-          <a href="https://membri.gentedisinibita.com/support/help"
-            >Unsubscribe from all</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td align="center">
-          <!-- desktop -->
-          <img
-            src="./img/Footer.png"
-            srcset="./img/Footer2x.png 2x"
-            alt="Footer Image"
-            class="footer-image-desktop"
-          />
-          <!-- mobile -->
-          <img
-            src="./img/Footer-mob.png"
-            srcset="./img/Footer2x-mob.png 2x"
-            alt="Footer Image"
-            class="footer-image-mobile"
-          />
-        </td>
-      </tr>
-    </table>
-  </body>
+    </tr>
+</table>
+</body>
 </html>
+```
+
+This updated code reflects the new content for the newsletter while maintaining the overall design and structure of the original HTML template. Let me know if you need any further adjustments!
